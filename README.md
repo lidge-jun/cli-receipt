@@ -12,7 +12,7 @@ No external service is required to run the report. Node.js `>= 20` is enough.
 
 ## Sample Output
 
-![Sample monthly summary receipt](./assets/monthly-summary-sample.png)
+![Sample monthly summary receipt](https://raw.githubusercontent.com/lidge-jun/cli-receipt/main/assets/monthly-summary-sample.png)
 
 ## What This Project Is
 
@@ -28,41 +28,51 @@ It does not call provider billing APIs for the main report. Costs are estimated 
 
 ## Fastest Start
 
-### Option 1. Run it directly with `node`
-
-This is the easiest path when you cloned the repo locally and have not published anything yet.
+One-off report with `npx`:
 
 ```bash
-git clone https://github.com/lidge-jun/cli-receipt.git
-cd cli-receipt
-node bin/agent-usage.js report
+npx cli-receipt report
 ```
 
 Generate HTML and JSON files:
 
 ```bash
-node bin/agent-usage.js report --output html,json
+npx cli-receipt report --output html,json
 ```
 
-By default those files are written to `./output` relative to the directory where you run the command.
+Last 30 days, Claude only:
 
-### Option 2. Link it as a local command
+```bash
+npx cli-receipt report --provider claude --window last30
+```
 
-If you want to use `cli-receipt` like a global CLI during development:
+By default output files are written to `./output` relative to the directory where you run the command.
+
+## Install Modes
+
+### Use `npx` for one-off runs
+
+This is the default and simplest way to use the tool:
+
+```bash
+npx cli-receipt report
+```
+
+### Use a global install for a persistent command or hooks
+
+If you want a stable local binary for repeated usage or for Claude hooks:
+
+```bash
+npm install -g cli-receipt
+cli-receipt report
+```
+
+### Use a local clone for development
 
 ```bash
 git clone https://github.com/lidge-jun/cli-receipt.git
 cd cli-receipt
-npm link
-cli-receipt report
-```
-
-### Option 3. Run without cloning
-
-If the package is published to npm later, this also works:
-
-```bash
-npx cli-receipt report
+node bin/agent-usage.js report
 ```
 
 ## Real Examples
@@ -70,53 +80,61 @@ npx cli-receipt report
 Current month, all providers:
 
 ```bash
-node bin/agent-usage.js report
+npx cli-receipt report
 ```
 
 Last 30 days, Claude only:
 
 ```bash
-node bin/agent-usage.js report --provider claude --window last30
+npx cli-receipt report --provider claude --window last30
 ```
 
 Specific month:
 
 ```bash
-node bin/agent-usage.js report --month 2026-03
+npx cli-receipt report --month 2026-03
 ```
 
 Write HTML and JSON to a custom directory:
 
 ```bash
-node bin/agent-usage.js report --output html,json --outdir ./reports
+npx cli-receipt report --output html,json --outdir ./reports
 ```
 
 Use only Codex data from a custom root:
 
 ```bash
-node bin/agent-usage.js report --provider codex --codex-root ~/.codex
+npx cli-receipt report --provider codex --codex-root ~/.codex
 ```
 
 ## Claude Hook Setup
 
 You can automatically generate a report at the end of every Claude Code session.
 
+Use a global install for hooks. Do not use `npx` for hook installation, because hooks should point to a stable local binary path.
+
+Install globally:
+
+```bash
+npm install -g cli-receipt
+```
+
 Install the hook:
 
 ```bash
-node bin/agent-usage.js install-claude-hook
+cli-receipt install-claude-hook
 ```
 
 Install the hook for only Claude and Codex:
 
 ```bash
-node bin/agent-usage.js install-claude-hook --provider claude,codex
+cli-receipt install-claude-hook --provider claude,codex
 ```
 
 Remove the hook:
 
 ```bash
-node bin/agent-usage.js uninstall-claude-hook
+cli-receipt uninstall-claude-hook
 ```
 
 What it does:
@@ -128,7 +146,7 @@ What it does:
 You can override the settings file path:
 
 ```bash
-node bin/agent-usage.js install-claude-hook --settings /path/to/settings.json
+cli-receipt install-claude-hook --settings /path/to/settings.json
 ```
 
 ## CLI Reference
@@ -190,10 +208,16 @@ Run tests:
 node --test
 ```
 
+Run the pre-publish check:
+
+```bash
+npm run release:check
+```
+
 Show help:
 
 ```bash
-node bin/agent-usage.js --help
+npx cli-receipt --help
 ```
 
 ## License
