@@ -1,0 +1,40 @@
+{
+  "name": "cli-receipt",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Monthly CLI activity heatmaps and cost receipts for Claude Code, OpenAI Codex, and GitHub Copilot — zero dependencies, local-first.",
+  "license": "MIT",
+  "author": "cli-receipt contributors",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lidge-jun/cli-receipt.git"
+  },
+  "homepage": "https://github.com/lidge-jun/cli-receipt#readme",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "codex",
+    "copilot",
+    "usage",
+    "heatmap",
+    "receipt",
+    "token",
+    "cost",
+    "cli"
+  ],
+  "bin": {
+    "cli-receipt": "./bin/agent-usage.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

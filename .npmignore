@@ -1,0 +1,9 @@
+reference/
+test/
+output/
+.claude-plugin/
+.codex-plugin/
+.plugin/
+*.tgz
+.DS_Store
+.gitignore

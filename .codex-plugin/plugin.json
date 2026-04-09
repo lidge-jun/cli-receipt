@@ -1,0 +1,10 @@
+{
+  "name": "cli-receipt",
+  "version": "0.1.0",
+  "description": "Monthly local activity heatmaps for Claude Code, Codex, and Copilot CLI.",
+  "author": {
+    "name": "lidge-jun"
+  },
+  "homepage": "https://github.com/lidge-jun/cli-receipt",
+  "license": "MIT"
+}

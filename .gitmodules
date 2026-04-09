@@ -1,0 +1,6 @@
+[submodule "reference/claude-receipts"]
+	path = reference/claude-receipts
+	url = https://github.com/chrishutchinson/claude-receipts.git
+[submodule "reference/codexbar"]
+	path = reference/codexbar
+	url = https://github.com/steipete/codexbar.git
