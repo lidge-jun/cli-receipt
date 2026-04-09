@@ -10,6 +10,10 @@ It reads the local artifacts those tools already write on your machine, estimate
 
 No external service is required to run the report. Node.js `>= 20` is enough.
 
+## Sample Output
+
+![Sample monthly summary receipt](./assets/monthly-summary-sample.svg)
+
 ## What This Project Is
 
 `cli-receipt` is a small Node CLI with no runtime dependencies.

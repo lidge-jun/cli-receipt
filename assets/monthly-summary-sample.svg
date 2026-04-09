@@ -1,0 +1,45 @@
+<svg width="284" height="643" viewBox="0 0 284 643" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="6" y="10" width="271" height="629" rx="2" fill="#FAFAF8" stroke="#1A1A1A" stroke-width="1.5"/>
+  <line x1="15" y1="27.5" x2="267" y2="27.5" stroke="#1A1A1A" stroke-width="1.5"/>
+  <line x1="15" y1="53.5" x2="267" y2="53.5" stroke="#1A1A1A" stroke-width="1.5"/>
+  <line x1="15" y1="119.5" x2="267" y2="119.5" stroke="#1A1A1A" stroke-width="1.5"/>
+  <line x1="15" y1="151.5" x2="267" y2="151.5" stroke="#1A1A1A" stroke-width="1.5"/>
+  <line x1="15" y1="485.5" x2="267" y2="485.5" stroke="#1A1A1A" stroke-width="1.5"/>
+  <line x1="15" y1="519.5" x2="267" y2="519.5" stroke="#1A1A1A" stroke-width="1.5"/>
+  <line x1="15" y1="563.5" x2="267" y2="563.5" stroke="#1A1A1A" stroke-width="1.5"/>
+  <line x1="15" y1="623.5" x2="267" y2="623.5" stroke="#1A1A1A" stroke-width="1.5"/>
+
+  <g fill="#111" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace">
+    <text x="142" y="38" text-anchor="middle" font-size="20">Monthly Summary</text>
+
+    <text x="142" y="81" text-anchor="middle" font-size="19">Final Usage Receipt</text>
+    <text x="142" y="103" text-anchor="middle" font-size="19">2026-04</text>
+
+    <text x="18" y="138" font-size="16">ITEM</text>
+    <text x="122" y="138" font-size="16">QTY</text>
+    <text x="229" y="138" font-size="16">PRICE</text>
+
+    <text x="18" y="174" font-size="18">Claude</text>
+    <text x="32" y="198" font-size="16">Month tokens</text>
+    <text x="143" y="198" font-size="16">411.6m</text>
+    <text x="211" y="198" font-size="16">$411.36</text>
+
+    <text x="18" y="248" font-size="18">Codex</text>
+    <text x="32" y="272" font-size="16">Month tokens</text>
+    <text x="135" y="272" font-size="16">1,145.2m</text>
+    <text x="205" y="272" font-size="16">$604.82</text>
+
+    <text x="18" y="322" font-size="18">Copilot</text>
+    <text x="32" y="346" font-size="16">Month tokens</text>
+    <text x="135" y="346" font-size="16">2,944.1m</text>
+    <text x="205" y="346" font-size="16">$7561.15</text>
+
+    <text x="18" y="503" font-size="18">TOTAL EST.</text>
+    <text x="207" y="503" font-size="18">$8577.34</text>
+
+    <text x="18" y="545" font-size="18">TOTAL TOKENS</text>
+    <text x="205" y="545" font-size="18">4,500.9m</text>
+
+    <text x="142" y="596" text-anchor="middle" font-size="18">Cross-provider month snapshot</text>
+  </g>
+</svg>
