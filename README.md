@@ -12,7 +12,7 @@ No external service is required to run the report. Node.js `>= 20` is enough.
 
 ## Sample Output
 
-![Sample monthly summary receipt](./assets/monthly-summary-sample.svg)
+![Sample monthly summary receipt](./assets/monthly-summary-sample.png)
 
 ## What This Project Is
 
