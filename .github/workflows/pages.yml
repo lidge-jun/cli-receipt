@@ -26,6 +26,8 @@ jobs:
         with:
           node-version: "20"
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Validate static page
         run: |
           npm test
