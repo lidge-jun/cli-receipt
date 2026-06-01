@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="cli-receipt social preview">
+  <rect width="1200" height="630" fill="#f6fbfa"/>
+  <rect x="80" y="80" width="1040" height="470" rx="30" fill="#111827"/>
+  <text x="130" y="170" fill="#5eead4" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="6">LOCAL AI CLI RECEIPTS</text>
+  <text x="130" y="282" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="76" font-weight="900">cli-receipt</text>
+  <text x="130" y="352" fill="#d1fae5" font-family="Inter, Arial, sans-serif" font-size="34">Claude Code, Codex, and Copilot usage reports.</text>
+  <g transform="translate(130 415)">
+    <rect width="170" height="56" rx="12" fill="#0f766e"/>
+    <text x="85" y="37" text-anchor="middle" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900">zero deps</text>
+    <rect x="190" width="170" height="56" rx="12" fill="#2563eb"/>
+    <text x="275" y="37" text-anchor="middle" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900">HTML</text>
+    <rect x="380" width="170" height="56" rx="12" fill="#b45309"/>
+    <text x="465" y="37" text-anchor="middle" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900">JSON</text>
+  </g>
+</svg>
